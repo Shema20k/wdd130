@@ -1,0 +1,63 @@
+/* nav styling */
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* h1 styling */
+h1 {
+    color: darkblue;
+}
+
+/* img rule */
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* main rule */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* aside rule */
+aside {
+    width: 250px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* p rule */
+p {
+    padding: 0;
+}
+
+/* footer rule */
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}

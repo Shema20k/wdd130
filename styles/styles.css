@@ -1,4 +1,4 @@
-/* Reset and body styling */
+/* Reset and basic body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -39,19 +39,21 @@ h1 {
     text-align: center;
 }
 
+/* Profile image in main */
 main img {
     width: 150px;
-    height: auto;
+    height: auto; /* maintain aspect ratio */
     border-radius: 50%;
     display: block;
     margin: 10px auto;
 }
 
+/* Paragraphs */
 p {
     padding: 0;
 }
 
-/* Aside section */
+/* Aside section styling */
 aside {
     width: 250px;
     margin: 20px auto;
@@ -63,9 +65,10 @@ aside {
     border-radius: 10px;
 }
 
+/* Image inside aside */
 aside img {
     width: 200px;
-    height: auto;
+    height: auto; /* maintain aspect ratio */
     display: block;
     margin: 0 auto;
 }
