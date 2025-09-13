@@ -1,0 +1,76 @@
+/* General Body and Main Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 700px; 
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Image Adjustments */
+img {
+    display: block;
+    width: 100%; /* Ensures the image is responsive and within container */
+    height: auto;
+    border-radius: 8px; 
+    margin-bottom: 20px;/* Matches the rounded corners of the content */
+}
+
+/* Section Styling */
+section {
+    background-color: #e6e6e6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
