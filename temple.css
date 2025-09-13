@@ -1,76 +1,63 @@
-/* General Body and Main Layout */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-main {
-    max-width: 700px; 
-    margin: 30px auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* Image Adjustments */
-img {
-    display: block;
-    width: 100%; /* Ensures the image is responsive and within container */
-    height: auto;
-    border-radius: 8px; 
-    margin-bottom: 20px;/* Matches the rounded corners of the content */
-}
-
-/* Section Styling */
-section {
-    background-color: #e6e6e6;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-p, li {
-    font-size: 1em;
-    color: #333;
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-a {
-    color: blue;
-    text-decoration: underline;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+/* nav styling */
+nav {
+    background-color: #444;
     padding: 10px;
-    font-size: 0.9em;
-    margin-top: 40px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* h1 styling */
+h1 {
+    color: darkblue;
+}
+
+/* img rule */
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* main rule */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* aside rule */
+aside {
+    width: 250px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* p rule */
+p {
+    padding: 0;
+}
+
+/* footer rule */
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+    text-align: center;
 }
