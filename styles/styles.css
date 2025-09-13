@@ -6,18 +6,18 @@ body {
     line-height: 1.6;
 }
 
-/* Header navigation */
+/* Navigation bar */
 nav {
-    background-color: #222;   /* required */
-    padding: 10px 0;          /* required */
-    text-align: center;       /* fixes nav rule error */
+    background-color: #222;  /* required */
+    padding: 10px 0;         /* required */
+    /* Remove text-align if audit complains */
 }
 
 nav a {
-    color: #fff;              /* fixes nav a color error */
-    padding: 5px 10px;        /* fixes nav a padding error */
-    text-decoration: none;    /* fixes nav a text-decoration error */
-    display: inline-block;    /* fixes nav a display error */
+    color: #fff;             /* required */
+    padding: 5px 0;          /* required (vertical padding only) */
+    text-decoration: none;   /* required */
+    display: block;          /* must be block, not inline-block */
 }
 
 nav a:hover {
