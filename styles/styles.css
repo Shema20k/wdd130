@@ -39,7 +39,7 @@ h1 {
     text-align: center;
 }
 
-/* Profile image in main */
+/* Profile image inside main */
 main img {
     width: 150px;
     height: auto; /* maintain aspect ratio */
