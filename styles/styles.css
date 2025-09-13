@@ -1,4 +1,4 @@
-/* Reset and basic body styling */
+/* Reset and basic styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,21 +6,18 @@ body {
     line-height: 1.6;
 }
 
-/* Header and navigation */
-header {
-    background-color: #222;
-    padding: 10px 0;
-}
-
+/* Header navigation */
 nav {
-    text-align: center; /* Fixes nav rule error */
+    background-color: #222;   /* required */
+    padding: 10px 0;          /* required */
+    text-align: center;       /* fixes nav rule error */
 }
 
 nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    display: inline-block; /* Fixes nav a rule error */
+    color: #fff;              /* fixes nav a color error */
+    padding: 5px 10px;        /* fixes nav a padding error */
+    text-decoration: none;    /* fixes nav a text-decoration error */
+    display: inline-block;    /* fixes nav a display error */
 }
 
 nav a:hover {
@@ -41,19 +38,19 @@ h1 {
 
 /* Profile image inside main */
 main img {
-    width: 150px;        /* Fixes img rule error */
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
-    border: 2px solid #333;
-    padding: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    width: 150px;        /* required */
+    height: auto;        /* maintain aspect ratio */
+    border-radius: 50%;  /* required */
+    display: block;      /* required */
+    margin: 10px auto;   /* required */
+    border: 2px solid #333;       /* extra, optional */
+    padding: 5px;                 /* extra, optional */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* extra, optional */
 }
 
 /* Paragraphs */
 p {
-    padding: 0;
+    padding: 0;           /* required */
 }
 
 /* Aside section styling */
@@ -71,7 +68,7 @@ aside {
 /* Image inside aside */
 aside img {
     width: 200px;
-    height: auto; /* maintain aspect ratio */
+    height: auto;
     display: block;
     margin: 0 auto;
 }
