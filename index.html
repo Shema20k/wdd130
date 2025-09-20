@@ -1,53 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shema Darcy | WDD 130</title>
-
-    <!-- Meta tags -->
-    <meta name="description" content="Shema Darcy – WDD130 Home Page, coursework, and practice for learning HTML and CSS.">
-    <meta name="author" content="Shema Darcy">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Home Page</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <!-- Header with navigation -->
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/index.html">Rafting Website</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Welcome to My Home Page</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+    </nav>
+  </header>
 
-    <!-- Main content -->
-    <main>
-        <h1>Shema Darcy | WDD 130</h1>
-        <img src="images/profile.jpeg" alt="Portrait of Shema Darcy" width="200">
-        <p>
-            Hello, my name is Shema Darcy from Kigali, Rwanda, and I'm a serious Christian.<br>
-            I enjoy playing basketball and coding. I'm currently studying software
-            development at Brigham Young University–Idaho.<br>
-            I'm excited to learn more about software development. I'm looking
-            forward to creating my own world of coding, just as Elon Musk did with his companies.
-        </p>
-    </main>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! My name is Shema Darcy. This is my personal home page for class. Here I share a bit about myself and my favorite temples.</p>
+      <img src="images/profile.jpeg" alt="My profile picture">
+    </section>
 
-    <!-- Aside section about your country -->
-<aside>
-    <h2>Rwanda</h2>
-    <img src="images/rwanda-flag.jpeg" alt="Flag of Rwanda">
-    <p>
-        Rwanda, known as the “Land of a Thousand Hills,” is a beautiful country in East Africa. 
-        It is famous for its rolling green hills, wildlife, and rapidly growing technology sector.
-    </p>
-</aside>
+    <!-- Aside box -->
+    <aside class="box">
+      <h2>Rwanda</h2>
+      <img src="images/rwanda-flag.jpeg" alt="Picture of my country">
+      <p>My country is beautiful with rich culture and history.</p>
+    </aside>
 
+    <!-- Temple List -->
+    <ul class="box">
+      <li>
+        <a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng" target="_blank">
+          Salt Lake Temple
+        </a>
+      </li>
+      <li>
+        <a href="https://www.churchofjesuschrist.org/temples/details/nairobi-kenya-temple?lang=eng" target="_blank">
+          Nairobi Kenya Temple
+        </a>
+      </li>
+      <li>
+        <a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple?lang=eng" target="_blank">
+          Paris France Temple
+        </a>
+      </li>
+    </ul>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 😀 Shema Darcy 😀 Kigali, Rwanda</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Shema Darcy. All rights reserved.</p>
+  </footer>
 </body>
 </html>
