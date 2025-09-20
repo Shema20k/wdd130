@@ -1,0 +1,173 @@
+/* ==============================
+   Rafting Site CSS – rafting.css
+   ============================== */
+
+/* --- CSS Variables --- */
+:root {
+  --primary-color: #005f73;    /* Dark teal */
+  --accent1-color: #0a9396;    /* Teal accent */
+  --accent2-color: #94d2bd;    /* Light teal */
+  --body-font: 'Arial', sans-serif;
+  --heading-font: 'Verdana', sans-serif;
+}
+
+/* --- Reset Box Model --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Body Styling --- */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  line-height: 1.6;
+  background-color: #f0f8ff; /* Optional light background */
+}
+
+/* --- Layout Container Width --- */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* --- Headings --- */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* --- Basic Margin/Padding for Elements --- */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* --- Header --- */
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--accent2-color);
+}
+
+header .logo {
+  max-width: 150px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.hero img.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-size: 2rem;
+}
+
+.hero-article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(10, 147, 150, 0.7);
+  padding: 16px;
+  max-width: 300px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.hero-article img.client-img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 8px;
+}
+
+/* --- History Section --- */
+section.history {
+  background-color: var(--accent2-color);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* --- Adventures Section --- */
+section.adventures {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+section.adventures figure {
+  flex: 1 1 calc(20% - 16px);
+  text-align: center;
+  background-color: #e0f7f7;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+section.adventures figure img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+section.adventures figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--accent1-color);
+  color: #fff;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+}
