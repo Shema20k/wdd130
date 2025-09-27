@@ -120,14 +120,17 @@ section.history {
 
 /* --- Adventures Section --- */
 section.adventures {
+  margin-top: 24px;
+}
+
+.adventure-gallery {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
-  margin-top: 24px;
 }
 
-section.adventures figure {
+.adventure-gallery figure {
   flex: 1 1 calc(20% - 16px);
   text-align: center;
   background-color: #e0f7f7;
@@ -135,12 +138,12 @@ section.adventures figure {
   padding: 8px;
 }
 
-section.adventures figure img {
+.adventure-gallery figure img {
   width: 100%;
   border-radius: 8px;
 }
 
-section.adventures figcaption {
+.adventure-gallery figcaption {
   margin-top: 8px;
   font-weight: bold;
   color: var(--primary-color);
@@ -162,9 +165,13 @@ footer p {
   font-size: 0.9rem;
 }
 
+.socialmedia {
+  display: flex;
+  gap: 12px;
+}
+
 .socialmedia a {
   text-decoration: none;
-  margin-left: 8px;
 }
 
 .socialmedia img {
