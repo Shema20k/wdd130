@@ -1,75 +1,73 @@
-/* ==============================
-   Rafting Site CSS – rafting.css
-   ============================== */
-
-/* --- CSS Variables --- */
 :root {
-  --primary-color: #005f73;    /* Dark teal */
-  --accent1-color: #0a9396;    /* Teal accent */
-  --accent2-color: #94d2bd;    /* Light teal */
+  --primary-color: #005f73;
+  --accent1-color: #0a9396;
+  --accent2-color: #94d2bd;
   --body-font: 'Arial', sans-serif;
   --heading-font: 'Verdana', sans-serif;
+  --footer-bg: #004e5d;
 }
 
-/* --- Reset Box Model --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* --- Body Styling --- */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   line-height: 1.6;
-  background-color: #f0f8ff; /* Optional light background */
+  background-color: #f0f8ff;
 }
 
-/* --- Layout Container Width --- */
 header, main, footer {
-  width: 840px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
-/* --- Headings --- */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* --- Basic Margin/Padding for Elements --- */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* --- Header --- */
 header {
+  background-color: var(--footer-bg);
+  padding: 16px;
+}
+
+.header-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 16px;
-  background-color: var(--accent2-color);
 }
 
 header .logo {
   max-width: 150px;
 }
 
-header nav {
+.header-grid nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 24px;
 }
 
-header nav a {
+.header-grid nav a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* --- Hero Section --- */
+.header-grid nav a:hover {
+  color: var(--accent2-color);
+}
+
 .hero {
   position: relative;
   margin-bottom: 24px;
@@ -87,7 +85,7 @@ header nav a {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.85;
   background-color: var(--accent1-color);
   color: #fff;
   font-size: 2rem;
@@ -97,7 +95,7 @@ header nav a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(10, 147, 150, 0.7);
+  background-color: rgba(10, 147, 150, 0.85);
   padding: 16px;
   max-width: 300px;
   color: #fff;
@@ -111,16 +109,18 @@ header nav a {
   border-radius: 8px;
 }
 
-/* --- History Section --- */
 section.history {
   background-color: var(--accent2-color);
   padding: 16px;
   border-radius: 8px;
 }
 
-/* --- Adventures Section --- */
 section.adventures {
   margin-top: 24px;
+}
+
+.adventures p {
+  margin-bottom: 8px;
 }
 
 .adventure-gallery {
@@ -149,13 +149,12 @@ section.adventures {
   color: var(--primary-color);
 }
 
-/* --- Footer --- */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: var(--accent1-color);
+  background-color: var(--footer-bg);
   color: #fff;
   margin-top: 24px;
   border-radius: 8px;
@@ -177,4 +176,11 @@ footer p {
 .socialmedia img {
   width: 32px;
   height: 32px;
+  filter: brightness(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
