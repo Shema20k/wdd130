@@ -50,21 +50,22 @@ header .logo {
   max-width: 150px;
 }
 
-.header-grid nav {
+/* ✅ CHANGED: Replaced old nav flex style with class "main-nav" */
+.main-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 24px;
 }
 
-.header-grid nav a {
+.main-nav a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.header-grid nav a:hover {
+.main-nav a:hover {
   color: var(--accent2-color);
 }
 
@@ -164,9 +165,11 @@ footer p {
   font-size: 0.9rem;
 }
 
-.socialmedia {
+/* ✅ CHANGED: Added flex display + right-align for social icons */
+footer nav.socialmedia {
   display: flex;
   gap: 12px;
+  margin-left: auto;
 }
 
 .socialmedia a {
