@@ -5,6 +5,7 @@
   --body-font: 'Arial', sans-serif;
   --heading-font: 'Verdana', sans-serif;
   --footer-bg: #004e5d;
+  --header-bg: #d8c4f0;
 }
 
 * {
@@ -15,113 +16,105 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
-  line-height: 1.6;
+  color: #333;
   background-color: #f0f8ff;
-}
-
-header, main, footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+  line-height: 1.6;
 }
 
 header {
-  background-color: var(--footer-bg);
+  background-color: var(--header-bg);
   padding: 16px;
+  
 }
 
 .header-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  max-width: 900px;
+  margin: 30px auto;
 }
 
-header .logo {
+.logo {
   max-width: 150px;
+  border-radius: 8px;
+  margin: 20px;
+
 }
 
-/* ✅ CHANGED: Replaced old nav flex style with class "main-nav" */
 .main-nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   gap: 24px;
 }
 
 .main-nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .main-nav a:hover {
-  color: var(--accent2-color);
+  color: var(--accent1-color);
 }
 
-.hero {
-  position: relative;
-  margin-bottom: 24px;
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px;
 }
 
-.hero img.hero-img {
-  display: block;
-  width: 100%;
-  height: auto;
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 12px;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
+/* ✅ Rating Section Layout */
+.rating {
+  border: 2px solid #ccc;
   padding: 16px;
-  text-align: center;
-  opacity: 0.85;
-  background-color: var(--accent1-color);
-  color: #fff;
-  font-size: 2rem;
-}
-
-.hero-article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(10, 147, 150, 0.85);
-  padding: 16px;
-  max-width: 300px;
-  color: #fff;
+  margin-bottom: 32px;
+  background-color: #fff;
   border-radius: 8px;
 }
 
-.hero-article img.client-img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
+.rating-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-content img.client-img {
+  width: 120px;
   border-radius: 8px;
 }
 
-section.history {
+/* ✅ History Section Layout */
+.history {
   background-color: var(--accent2-color);
-  padding: 16px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-icon {
+  width: 100px;
+  height: 100px;
   border-radius: 8px;
 }
 
-section.adventures {
-  margin-top: 24px;
-}
-
+/* ✅ Adventures Section */
 .adventures p {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .adventure-gallery {
@@ -139,7 +132,7 @@ section.adventures {
   padding: 8px;
 }
 
-.adventure-gallery figure img {
+.adventure-gallery img {
   width: 100%;
   border-radius: 8px;
 }
@@ -150,40 +143,33 @@ section.adventures {
   color: var(--primary-color);
 }
 
+/* ✅ Footer */
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
   background-color: var(--footer-bg);
   color: #fff;
-  margin-top: 24px;
-  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 8px 8px 0 0;
 }
 
 footer p {
   font-size: 0.9rem;
+  margin-bottom: 12px;
 }
 
-/* ✅ CHANGED: Added flex display + right-align for social icons */
 footer nav.socialmedia {
   display: flex;
-  gap: 12px;
-  margin-left: auto;
+  justify-content: center;
+  gap: 16px;
 }
 
-.socialmedia a {
-  text-decoration: none;
-}
-
-.socialmedia img {
+.socialmedia a img {
   width: 32px;
   height: 32px;
-  filter: brightness(1);
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-.socialmedia img:hover {
+.socialmedia a img:hover {
   transform: scale(1.1);
-  filter: brightness(1.2);
 }
