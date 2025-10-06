@@ -1,0 +1,176 @@
+
+:root {
+  --primary-color: #005f73;
+  --accent1-color: #0a9396;
+  --accent2-color: #94d2bd;
+  --body-font: 'Arial', sans-serif;
+  --heading-font: 'Verdana', sans-serif;
+  --footer-bg: #004e5d;
+  --header-bg: #d8c4f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: #333;
+  background-color: #f0f8ff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--header-bg);
+  padding: 16px;
+  
+}
+
+.header-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.logo {
+  max-width: 150px;
+  border-radius: 8px;
+  margin: 20px;
+
+}
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--accent1-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+/* ✅ Rating Section Layout */
+.rating {
+  border: 2px solid #ccc;
+  padding: 16px;
+  margin-bottom: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.rating-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-content img.client-img {
+  width: 120px;
+  border-radius: 8px;
+}
+
+/* ✅ History Section Layout */
+.history {
+  background-color: var(--accent2-color);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+/* ✅ Adventures Section */
+.adventures p {
+  margin-bottom: 12px;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.adventure-gallery figure {
+  flex: 1 1 calc(20% - 16px);
+  text-align: center;
+  background-color: #e0f7f7;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* ✅ Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 8px 8px 0 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+footer nav.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socialmedia a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.socialmedia a img:hover {
+  transform: scale(1.1);
+}

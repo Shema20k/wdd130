@@ -1,0 +1,24 @@
+body {
+    font-family: "sansita" sans-serif;
+}
+
+nav {
+    background-color: #364546;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1 1 100px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
