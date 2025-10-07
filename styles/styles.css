@@ -51,7 +51,7 @@ main section {
 
 main img {
   float: right;
-  margin: 0 0 1rem 1rem; /* space around floated image */
+  margin: 0 2rem 2rem; /* space around floated image */
   max-width: 200px;
   border-radius: 10px;
 }
@@ -71,11 +71,13 @@ aside {
   text-align: center;
   position: relative; /* required for h2 overlay */
   margin: 2rem auto;
+  border-radius: 8px;
 }
 
 aside img {
   max-width: 100%;
   border-radius: 8px;
+  width: 80%;
 }
 
 aside h2 {
