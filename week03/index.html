@@ -7,6 +7,8 @@
   <meta name="author" content="Shema Darcy" />
   <title>Shema Darcy - WDD130 Home Page</title>
   <link rel="stylesheet" href="../styles/styles.css" />
+  <!-- Include Font Awesome for social media icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -21,11 +23,13 @@
     <section>
       <h2>About Me</h2>
       <p>Hello! My name is Shema Darcy. This is my personal home page for class. Here I share a bit about myself and my favorite temples.</p>
+      <!-- Replace placeholder with actual profile image -->
       <img src="../images/profile.jpeg" alt="My profile picture" width="200" />
     </section>
 
     <aside class="box">
       <h2>Rwanda</h2>
+      <!-- Replace placeholder with actual Rwanda flag image -->
       <img src="../images/rwanda-flag.jpeg" alt="Flag of Rwanda" width="200" />
       <p>My country is beautiful with rich culture and history.</p>
     </aside>
@@ -47,11 +51,18 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Shema Darcy. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Shema Darcy. All rights reserved.</p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <!-- Social media links using Font Awesome icons -->
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.twitter.com/your-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a>
     </div>
   </footer>
+
+  <!-- Dynamically set the year in the footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
