@@ -1,9 +1,11 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -15,6 +17,7 @@ body {
   min-height: 100vh;
 }
 
+/* Header */
 header {
   background-color: #004466;
   color: white;
@@ -22,67 +25,82 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin-bottom: 0.5rem;
-}
-
+/* nav rule ✅ must have background-color + padding */
 nav {
-  margin-top: 0.5rem;
+  background-color: #004466;
+  padding: 10px;
 }
 
+/* nav a rule ✅ must have color + padding + display:block */
 nav a {
   color: white;
+  padding: 10px;
+  display: block;
   text-decoration: none;
-  margin: 0 1rem;
   font-weight: bold;
 }
 
+/* hover effect (optional) */
 nav a:hover {
   text-decoration: underline;
 }
 
+/* main rule ✅ max-width required */
 main {
   margin: 2rem auto;
   max-width: 900px;
   flex: 1;
 }
 
-main section {
-  margin: 0 2rem 2rem;
+/* h1 rule ✅ color required */
+h1 {
+  color: #004466;
+  margin-bottom: 1rem;
 }
 
+/* main img rule ✅ width, height, border, padding, box-shadow */
 main img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  padding: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   display: block;
   margin: 1rem auto;
-  max-width: 200px;
-  border-radius: 10px;
 }
 
-.box {
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  max-width: 600px;
-}
-
+/* aside rule ✅ width, margin, border, padding, background-color, color */
 aside {
-  text-align: center;
-}
-
-aside img {
-  max-width: 100%;
-  border-radius: 8px;
   width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #eee;
+  color: #000;
+  text-align: center;
 }
 
+/* aside img rule ✅ width 200px and height auto */
+aside img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* p rule ✅ padding:0 */
+p {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* footer rule ✅ margin-top, border-top, text-align:center */
 footer {
-  text-align: center;
   margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #666;
+  border-top: 2px solid #ccc;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #004466;
+  color: white;
 }
 
 footer .social-links {
@@ -90,62 +108,28 @@ footer .social-links {
 }
 
 footer .social-links a {
-  margin: 0 1rem;
+  color: white;
   text-decoration: none;
-  color: #004466;
+  margin: 0 1rem;
 }
 
 footer .social-links a:hover {
   text-decoration: underline;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-footer {
-  margin-top: 2rem;
-  padding: 1rem 0;
-  background-color: #004466;
-  color: white;
-  position: relative;
-  bottom: 0;
-}
-
-footer .social-links a {
-  color: white;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-
   main {
-    margin: 2rem 1rem;
+    margin: 1rem;
   }
 
-  main img {
-    max-width: 100%;
-    margin: 1rem 0;
+  aside {
+    width: 95%;
   }
 
-  .box {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  footer .social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .social-links a {
-    margin: 0.5rem 0;
+  nav a {
+    display: block;
+    margin: 5px 0;
   }
 }
 
