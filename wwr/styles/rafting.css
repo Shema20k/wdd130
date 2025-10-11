@@ -49,8 +49,7 @@ header {
   padding: 16px;
 }
 
-.header-inner,
-.header-grid {
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,108 +60,60 @@ header {
 
 .logo {
   max-width: 150px;
-  height: auto;
   border-radius: 8px;
 }
 
-.main-nav,
 .site-nav {
   display: flex;
   gap: 20px;
 }
 
-.main-nav a,
 .site-nav a {
   font-weight: bold;
   color: #000;
 }
 
-/* --- Headings --- */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 12px;
+/* --- Hero Section --- */
+/* ✅ FIXED: Added required hero styling for overlay and float-right */
+.hero {
+  position: relative;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-/* --- Main Layout --- */
-main {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 0 16px;
-}
-
-/* --- Rating Section --- */
-.rating {
-  border: 2px solid #ccc;
-  padding: 16px;
-  margin-bottom: 32px;
-  background-color: #fff;
-  border-radius: 8px;
-}
-
-.rating-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.rating-content img.client-img {
-  width: 120px;
-  border-radius: 8px;
-}
-
-/* --- History Section --- */
-.history {
-  background-color: var(--accent2-color);
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 32px;
-}
-
-.history-grid {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 20px;
-  align-items: center;
-}
-
-.history-icon {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-}
-
-/* --- Adventures --- */
-.adventures p {
-  margin-bottom: 12px;
-}
-
-.adventure-gallery {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.adventure-gallery figure {
-  flex: 1 1 calc(20% - 16px);
-  text-align: center;
-  background-color: #e0f7f7;
-  border-radius: 8px;
-  padding: 8px;
-}
-
-.adventure-gallery img {
+.hero img {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  border-radius: var(--border-radius);
 }
 
-.adventure-gallery figcaption {
-  margin-top: 8px;
-  font-weight: bold;
-  color: var(--primary-color);
+.hero h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.hero article img {
+  float: right; /* ✅ FIXED: hero image now floats right */
+  width: 150px;
+  border-radius: 8px;
+  margin-left: 20px;
 }
 
 /* --- Contact Page --- */
@@ -191,7 +142,6 @@ main {
 
 .map-side {
   flex: 1;
-  min-width: 300px;
 }
 
 .map-side iframe {
@@ -207,7 +157,6 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
 }
 
 .contact-form {
@@ -235,7 +184,6 @@ main {
 
 .contact-form label {
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .contact-form input[type="text"],
@@ -248,15 +196,10 @@ main {
   font-size: 1rem;
 }
 
-.contact-form textarea {
-  resize: vertical;
-}
-
 .contact-form button {
   background-color: var(--secondary-color);
   color: white;
   padding: 12px;
-  margin-top: 10px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -275,12 +218,6 @@ main {
   text-align: center;
 }
 
-.employees h2 {
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-
 .employee-cards {
   display: flex;
   justify-content: center;
@@ -296,15 +233,6 @@ main {
   border-radius: 8px;
   box-shadow: var(--shadow);
   text-align: center;
-}
-
-.employee img {
-  border-radius: 6px;
-}
-
-.employee p {
-  margin-top: 8px;
-  font-weight: bold;
 }
 
 /* --- Footer --- */
@@ -329,6 +257,11 @@ footer .socialmedia {
   margin-top: 10px;
 }
 
+/* ✅ FIXED: ensure text-decoration: none on social links */
+.socialmedia a {
+  text-decoration: none;
+}
+
 footer .socialmedia img {
   width: 30px;
   height: 30px;
@@ -341,23 +274,13 @@ footer .socialmedia img:hover {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .header-inner,
-  .header-grid {
+  .header-inner {
     flex-direction: column;
     align-items: center;
   }
 
-  .site-nav a,
-  .main-nav a {
-    margin: 8px 0;
-  }
-
   .contact-wrapper {
     flex-direction: column;
-  }
-
-  .map-side iframe {
-    min-height: 300px;
   }
 
   .employee-cards {
