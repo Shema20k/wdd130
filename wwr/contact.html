@@ -6,13 +6,13 @@
   <meta name="description" content="Contact Whitewater Rafting Company to ask questions, make reservations, or get support for your rafting adventure.">
   <meta name="author" content="Shema Darcy">
   <title>Contact Us – Whitewater Rafting</title>
-  <link rel="stylesheet" href="../wwr/rafting.css">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
   <header>
     <div class="header-inner">
-      <img src="../wwr/images/logo.jpeg" alt="Whitewater Rafting Logo" class="logo">
+      <img src="images/logo.jpeg" alt="Whitewater Rafting Logo" class="logo">
       <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -23,7 +23,7 @@
   </header>
 
   <main>
-    <h1>Contact Us</h1> <!--restored h1-->
+    <h1>Contact Us</h1>
 
     <section class="company-details centered">
       <h2>White Water Rafting Company</h2>
@@ -53,27 +53,26 @@
             <input type="email" id="email" name="email" placeholder="Your Email" required>
 
             <p><strong>Message Purpose:</strong></p>
-            <label for="purpose-general">
-            <input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry
-           </label>
+            <div class="radio-group">
+              <input type="radio" id="purpose-general" name="purpose" value="general" required>
+              <label for="purpose-general">General Inquiry</label>
 
-           <label for="purpose-reservation">
-           <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
-           </label>
+              <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+              <label for="purpose-reservation">Reservation Question</label>
 
-           <label for="purpose-suggestion">
-           <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
-           </label>
+              <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+              <label for="purpose-suggestion">Website Suggestion</label>
+            </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
 
-          <label for="newsletter">
-          <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
-          </label>
+            <label for="newsletter">
+              <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
+            </label>
 
-         <button type="submit">Send Message</button>
-       </form>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
