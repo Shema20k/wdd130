@@ -70,6 +70,50 @@ header {
   display: flex;
   gap: 20px;
 }
+/* --- Hero Section --- */
+.hero {
+  position: relative;       /* parent for absolute positioning */
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Position h1 over the hero image */
+.hero h1 {
+  position: absolute;
+  top: 20%;         /* vertical position */
+  left: 10%;        /* horizontal position */
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  margin-bottom: 0; /* override any default spacing */
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+}
+
+/* Position paragraph under h1 */
+.hero p {
+  position: absolute;
+  top: calc(20% + 60px);  /* slightly below h1 */
+  left: 10%;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  font-family: var(--body-font);
+  font-size: 1.2rem;
+  max-width: 600px;       /* optional for wrapping */
+}
+
+/* Float hero article image to the right if present */
+.hero img.hero-article-img {
+  float: right;
+  width: 40%;          /* adjust size */
+  margin-left: 20px;
+  border-radius: 8px;
+}
 
 .main-nav a,
 .site-nav a {
@@ -306,7 +350,6 @@ main {
   margin-top: 8px;
   font-weight: bold;
 }
-
 /* --- Footer --- */
 footer {
   background-color: var(--footer-bg);
@@ -322,11 +365,16 @@ footer p {
   margin-bottom: 12px;
 }
 
+/* --- Footer Social Media --- */
 footer .socialmedia {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  justify-content: center; /* center icons horizontally */
+  gap: 15px;               /* space between icons */
+  margin-top: 10px;        /* space from paragraph */
+}
+
+footer .socialmedia a {
+  text-decoration: none;   /* removes underline */
 }
 
 footer .socialmedia img {
@@ -336,7 +384,7 @@ footer .socialmedia img {
 }
 
 footer .socialmedia img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1);   /* subtle zoom on hover */
 }
 
 /* --- Responsive --- */
