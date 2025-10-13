@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Discover our exciting rafting trips - safe, fun, and adventurous!" />
+  <meta name="author" content="Shema Darcy" />
+  <title>Rafting Adventures - Trips</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trips.html">Trips</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Rafting Trips</h1>
+    <p>Whether you're looking for a calm float or a thrilling ride, we've got the perfect trip for you.</p>
+
+    <section class="trip-list">
+      <article class="trip-item">
+        <h2>Whitewater Beginner Trip</h2>
+        <img src="images/whitewater-beginner.jpg" alt="Beginner rafting trip" />
+        <p>Perfect for first-timers. Includes safety training and calm rapids.</p>
+        <p><strong>Duration:</strong> 1 Day</p>
+        <p><strong>Price:</strong> $75</p>
+      </article>
+
+      <article class="trip-item">
+        <h2>Adventure Rapids Expedition</h2>
+        <img src="images/adventure-rapids.jpg" alt="Advanced rafting expedition" />
+        <p>Challenge yourself with class III-IV rapids and exciting turns!</p>
+        <p><strong>Duration:</strong> 3 Days</p>
+        <p><strong>Price:</strong> $250</p>
+      </article>
+
+      <article class="trip-item">
+        <h2>Family Fun Float</h2>
+        <img src="images/family-float.jpg" alt="Family rafting float" />
+        <p>Relaxing and scenic trip for all ages, with picnic spots included.</p>
+        <p><strong>Duration:</strong> Half Day</p>
+        <p><strong>Price:</strong> $50</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Rafting Adventures | Shema Darcy | WDD 130</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

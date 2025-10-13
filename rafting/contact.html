@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Whitewater Rafting Company to ask questions, make reservations, or get support for your rafting adventure.">
+  <meta name="author" content="Shema Darcy">
+  <title>Contact Us – Whitewater Rafting</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <img src="images/logo.jpeg" alt="Whitewater Rafting Logo" class="logo">
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <section class="company-details centered">
+      <h2>White Water Rafting Company</h2>
+      <p>123 Main Kivu Street<br>Downtown, Gisenyi</p>
+      <p><strong>Phone:</strong> +250 785 053 518<br>
+         <strong>Email:</strong> info@whitewater.com</p>
+    </section>
+
+    <section class="contact-wrapper">
+      <div class="map-side">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.9965932044993!2d29.261719696789548!3d-1.731487099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd052df6272585%3A0xe3b55342632a4511!2sThe%20Palm%20Beach%20Resort!5e0!3m2!1sen!2srw!4v1759490094217!5m2!1sen!2srw"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="info-form-side">
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+
+          <form action="submit-form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <p><strong>Message Purpose:</strong></p>
+            <div class="radio-group">
+              <input type="radio" id="purpose-general" name="purpose" value="general" required>
+              <label for="purpose-general">General Inquiry</label>
+
+              <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+              <label for="purpose-reservation">Reservation Question</label>
+
+              <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+              <label for="purpose-suggestion">Website Suggestion</label>
+            </div>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+
+            <label for="newsletter">
+              <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="employees">
+      <h2>We Are Here to Serve You</h2>
+      <div class="employee-cards">
+        <div class="employee">
+          <img src="images/employee1.jpeg" alt="Employee 1">
+          <p>Employee Profile</p>
+        </div>
+        <div class="employee">
+          <img src="images/employee2.webp" alt="Employee 2">
+          <p>Employee Profile</p>
+        </div>
+        <div class="employee">
+          <img src="images/employee3.webp" alt="Employee 3">
+          <p>Employee Profile</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Whitewater Rafting – Shema Darcy</p>
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/facebook-icon.png" alt="Facebook">
+      </a>
+      <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/twitter-icon.png" alt="Twitter">
+      </a>
+      <a href="www.instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
