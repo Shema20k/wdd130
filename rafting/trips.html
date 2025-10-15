@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Discover our exciting rafting trips - safe, fun, and adventurous!" />
-  <meta name="author" content="Shema Darcy" />
-  <title>Rafting Adventures - Trips</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <meta name="description" content="Discover our exciting rafting trips - safe, fun, and adventurous!" >
+  <meta name="author" content="Shema Darcy" >
+  <title>Rafting Adventures – Trips</title>
+  <link rel="stylesheet" href="styles/styles.css" >
 </head>
+
 <body>
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="trips.html">Trips</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpeg" alt="Whitewater Rafting Logo" >
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html" aria-current="page">Trips</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <h1>Our Rafting Trips</h1>
     <p>Whether you're looking for a calm float or a thrilling ride, we've got the perfect trip for you.</p>
 
-    <section class="trip-list">
+    <section class="trip-list grid-container">
       <article class="trip-item">
         <h2>Whitewater Beginner Trip</h2>
-        <img src="images/whitewater-beginner.jpg" alt="Beginner rafting trip" />
+        <img src="images/whitewater-beginner.jpg" alt="Rafting beginner trip on calm river rapids" >
         <p>Perfect for first-timers. Includes safety training and calm rapids.</p>
         <p><strong>Duration:</strong> 1 Day</p>
         <p><strong>Price:</strong> $75</p>
@@ -33,28 +39,69 @@
 
       <article class="trip-item">
         <h2>Adventure Rapids Expedition</h2>
-        <img src="images/adventure-rapids.jpg" alt="Advanced rafting expedition" />
+        <img src="images/adventure-rapids.jpg" alt="Advanced rafting expedition on whitewater rapids" >
         <p>Challenge yourself with class III-IV rapids and exciting turns!</p>
         <p><strong>Duration:</strong> 3 Days</p>
         <p><strong>Price:</strong> $250</p>
       </article>
 
       <article class="trip-item">
-        <h2>Family Fun Float</h2>
-        <img src="images/family-float.jpg" alt="Family rafting float" />
+        <h2> Whitewater Family Fun Float</h2>
+        <img src="images/family-float.jpg" alt="Family rafting float on calm river" >
         <p>Relaxing and scenic trip for all ages, with picnic spots included.</p>
         <p><strong>Duration:</strong> Half Day</p>
         <p><strong>Price:</strong> $50</p>
       </article>
     </section>
+
+    <section class="trip-summary">
+      <h2>Trip Summary Table</h2>
+      <table summary="Summary of rafting trips including duration and price">
+        <thead>
+          <tr>
+            <th>Trip Name</th>
+            <th>Duration</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Whitewater Beginner Trip</td>
+            <td>1 Day</td>
+            <td>$75</td>
+          </tr>
+          <tr>
+            <td>Adventure Rapids Expedition</td>
+            <td>3 Days</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>Family Fun Float</td>
+            <td>Half Day</td>
+            <td>$50</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact-cta">
+      <a href="contact.html" class="btn btn-primary" aria-label="Contact Us to Book Your Trip">Contact Us to Book Your Trip</a>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Rafting Adventures | Shema Darcy | WDD 130</p>
+    <p>&copy; 2025 Whitewater Rafting – Shema Darcy</p>
+    <nav class="socialmedia" aria-label="Social media links">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/facebook-icon.png" alt="Facebook icon" >
+      </a>
+      <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/twitter-icon.png" alt="Twitter icon" >
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram icon" >
+      </a>
+    </nav>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

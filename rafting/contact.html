@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Whitewater Rafting Company to ask questions, make reservations, or get support for your rafting adventure.">
-  <meta name="author" content="Shema Darcy">
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <meta name="description" content="Contact Whitewater Rafting Company to ask questions, make reservations, or get support for your rafting adventure." >
+  <meta name="author" content="Shema Darcy" >
   <title>Contact Us – Whitewater Rafting</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css" >
 </head>
 
 <body>
   <header>
     <div class="header-inner">
-      <img src="images/logo.jpeg" alt="Whitewater Rafting Logo" class="logo">
+      <img src="images/logo.jpeg" alt="Whitewater Rafting Logo" class="logo" >
       <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -27,49 +27,63 @@
 
     <section class="company-details centered">
       <h2>White Water Rafting Company</h2>
-      <p>123 Main Kivu Street<br>Downtown, Gisenyi</p>
+      <address>
+        123 Main Kivu Street<br>
+        Downtown, Gisenyi
+      </address>
       <p><strong>Phone:</strong> +250 785 053 518<br>
-         <strong>Email:</strong> info@whitewater.com</p>
+         <strong>Email:</strong> <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
     </section>
 
     <section class="contact-wrapper">
       <div class="map-side">
-        <iframe 
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.9965932044993!2d29.261719696789548!3d-1.731487099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd052df6272585%3A0xe3b55342632a4511!2sThe%20Palm%20Beach%20Resort!5e0!3m2!1sen!2srw!4v1759490094217!5m2!1sen!2srw"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Location map of White Water Rafting Company"
+        ></iframe>
       </div>
 
       <div class="info-form-side">
         <div class="contact-form">
           <h2>Send Us a Message</h2>
 
-          <form action="submit-form.php" method="post">
+          <form action="submit-form.php" method="post" aria-label="Contact form">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" id="name" name="name" placeholder="Your Name" required >
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required >
 
-            <p><strong>Message Purpose:</strong></p>
-            <div class="radio-group">
-              <input type="radio" id="purpose-general" name="purpose" value="general" required>
-              <label for="purpose-general">General Inquiry</label>
+            <fieldset>
+              <legend>Message Purpose</legend>
+              <div class="radio-group" role="radiogroup" aria-labelledby="purpose-group-label">
+                <input type="radio" id="purpose-general" name="purpose" value="general" required >
+                <label for="purpose-general">General Inquiry</label>
 
-              <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-              <label for="purpose-reservation">Reservation Question</label>
+                <input type="radio" id="purpose-reservation" name="purpose" value="reservation" >
+                <label for="purpose-reservation">Reservation Question</label>
 
-              <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
-              <label for="purpose-suggestion">Website Suggestion</label>
-            </div>
+                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion" >
+                <label for="purpose-suggestion">Website Suggestion</label>
+              </div>
+            </fieldset>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
 
             <label for="newsletter">
-              <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
+              <input type="checkbox" id="newsletter" name="newsletter" aria-describedby="newsletter-desc" >
+              Please subscribe me to the monthly newsletter
             </label>
+            <p id="newsletter-desc" class="sr-only">You will receive a monthly newsletter via email.</p>
 
             <button type="submit">Send Message</button>
           </form>
@@ -80,33 +94,33 @@
     <section class="employees">
       <h2>We Are Here to Serve You</h2>
       <div class="employee-cards">
-        <div class="employee">
-          <img src="images/employee1.jpeg" alt="Employee 1">
-          <p>Employee Profile</p>
-        </div>
-        <div class="employee">
-          <img src="images/employee2.webp" alt="Employee 2">
-          <p>Employee Profile</p>
-        </div>
-        <div class="employee">
-          <img src="images/employee3.webp" alt="Employee 3">
-          <p>Employee Profile</p>
-        </div>
+        <article class="employee">
+          <img src="images/employee1.jpeg" alt="Portrait of John Doe, Rafting Guide">
+          <p>John Doe, Rafting Guide</p>
+        </article>
+        <article class="employee">
+          <img src="images/employee2.webp" alt="Portrait of Jane Smith, Customer Service">
+          <p>Jane Smith, Customer Service</p>
+        </article>
+        <article class="employee">
+          <img src="images/employee3.webp" alt="Portrait of Mike Johnson, Safety Officer">
+          <p>Mike Johnson, Safety Officer</p>
+        </article>
       </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Whitewater Rafting – Shema Darcy</p>
-    <nav class="socialmedia">
+    <nav class="socialmedia" aria-label="Social media links">
       <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-        <img src="images/facebook-icon.png" alt="Facebook">
+        <img src="images/facebook-icon.png" alt="Facebook icon" >
       </a>
       <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-        <img src="images/twitter-icon.png" alt="Twitter">
+        <img src="images/twitter-icon.png" alt="Twitter icon" >
       </a>
-      <a href="www.instagram.com" target="_blank" aria-label="Instagram">
-        <img src="images/instagram-icon.png" alt="Instagram">
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram icon" >
       </a>
     </nav>
   </footer>

@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home - Travel Website</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <meta name="description" content="Discover thrilling whitewater rafting adventures and scenic trips for all skill levels." >
+  <meta name="author" content="Shema Darcy" >
+  <title>Home – Whitewater Rafting</title>
+  <link rel="stylesheet" href="styles/styles.css" >
 </head>
+
 <body>
   <header>
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="images/logo.jpeg" alt="Company Logo" />
+        <img src="images/logo.jpeg" alt="Whitewater Rafting Logo" >
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="trips.html">Trips</a>
         <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <img src="images/hero.jpg" alt="Beautiful destination" class="hero-img" />
-    <h1>Explore the World with Us</h1>
-    <p>Your adventure starts here</p>
-  </section>
-
-  <section class="quote-section" style="max-width: 800px; margin: 0 auto 40px; padding: 0 16px;">
-    <blockquote style="font-style: italic; color: var(--primary-color); border-left: 4px solid var(--accent1-color); padding-left: 16px;">
-      <p>
-        "Life is a journey, not a destination. As we travel along life's pathway, we encounter challenges, obstacles, and uncertainties. But we must not permit these to divert us from our destiny. We must continue on, even when the road ahead seems uncertain. We must finish strong."
-      </p>
-      <footer style="margin-top: 8px; text-align: right; font-weight: bold; color: var(--secondary-color);">
-        — President Thomas S. Monson, <cite>“Finishers Wanted”, Ensign, June 2001</cite>
-      </footer>
-    </blockquote>
-  </section>
-
   <main>
-    <section class="subscribe-section" style="text-align: center; margin-bottom: 40px;">
+    <section class="hero">
+      <img src="images/hero.webp" alt="Exciting whitewater rafting adventure" class="hero-img">
+      <div class="hero-text">
+        <h1>Explore the World with Us</h1>
+        <p>Your adventure starts here.</p>
+        <a href="trips.html" class="btn btn-primary" aria-label="View Trips">View Our Trips</a>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <blockquote>
+        <p>
+          "Life is a journey, not a destination. As we travel along life's pathway, we encounter challenges, obstacles, and uncertainties. But we must not permit these to divert us from our destiny. We must continue on, even when the road ahead seems uncertain. We must finish strong."
+        </p>
+        <footer>
+          — President Thomas S. Monson, <cite>“Finishers Wanted”, Ensign, June 2001</cite>
+        </footer>
+      </blockquote>
+    </section>
+
+    <section class="subscribe-section">
       <h2>Subscribe to our Newsletter</h2>
-      <form action="#" method="post" class="subscribe-form" style="max-width: 400px; margin: 0 auto;">
-        <input type="email" name="email" placeholder="Enter your email" required style="padding: 10px; width: 70%; border: 1px solid var(--border); border-radius: 5px;"/>
-        <button type="submit" style="padding: 10px 20px; background-color: var(--secondary-color); color: white; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+      <form action="#" method="post" class="subscribe-form" aria-label="Newsletter subscription form">
+        <label for="subscriber-name">Name</label>
+        <input type="text" id="subscriber-name" name="name" placeholder="Your Name" required >
+
+        <label for="subscriber-email">Email</label>
+        <input type="email" id="subscriber-email" name="email" placeholder="Enter your email" required >
+
+        <button type="submit">Subscribe</button>
       </form>
     </section>
 
+    <section class="home-grid-content">
+      <div class="grid-item">
+        <img src="images/rafting1.webp" alt="Rafting on the rapids" >
+        <h3>Thrilling Rapids</h3>
+        <p>Experience heart-pounding excitement as you navigate some of the wildest rapids.</p>
+      </div>
+      <div class="grid-item">
+        <img src="images/scenery.webp" alt="Beautiful river scenery" >
+        <h3>Scenic Views</h3>
+        <p>Enjoy breathtaking views of pristine rivers and stunning landscapes.</p>
+      </div>
+      <div class="grid-item">
+        <img src="images/team.webp" alt="Experienced rafting guides" >
+        <h3>Expert Guides</h3>
+        <p>Our trained guides ensure your safety and make your adventure unforgettable.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Travel Website. All rights reserved.</p>
-    <div class="socialmedia">
-      <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
-      <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
-      <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
-    </div>
+    <p>&copy; 2025 Whitewater Rafting – Shema Darcy</p>
+    <nav class="socialmedia" aria-label="Social media links">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/facebook-icon.png" alt="Facebook icon" >
+      </a>
+      <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+        <img src="images/twitter-icon.png" alt="Twitter icon" >
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram icon" >
+      </a>
+    </nav>
   </footer>
 </body>
 </html>
